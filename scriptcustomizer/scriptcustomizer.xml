@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="system" method="upgrade">
+	<name>scriptcustomizer</name>
+	<author>Yatharth Vyas</author>
+	<creationDate>April 2021</creationDate>
+	<authorEmail>yatharth2000.vyas@gmail.com</authorEmail>
+	<authorUrl>https://github.com/YatharthVyas</authorUrl>
+	<version>1.0.0</version>
+	<description>A JavaScript manager plugin to load custom script files</description>
+	<files>
+		<filename plugin="scriptcustomizer">scriptcustomizer.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB.plg_system_scriptcustomizer.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+          
+			<fieldset name="basic">
+				<field
+					name="js_inline"
+					type="textarea"
+					label="JSCSTMZR_INLINE_INPUT_LABEL"
+					default=""
+					rows="10"
+					description="Do not include script tags"
+				/>
+			</fieldset>
+          
+		</fields>
+	</config>
+</extension>
